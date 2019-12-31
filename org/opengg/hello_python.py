@@ -166,17 +166,48 @@
 #     print("null")
 
 alien = {"color": "green", "age": 5, "name": "nimei"}
-# 获取键值对
-print(alien["color"])
-# 添加键值对
-alien["sex"] = "girl"
-print(alien)
-# 修改字典中的值
-alien["sex"] = "boy"
-print(alien)
-# 删除字典中的值
-del alien["sex"]
-print(alien)
-# 遍历字典
 
+# 获取键值对
+# print(alien["color"])
+
+# 添加键值对
+# alien["sex"] = "girl"
+# print(alien)
+
+# 修改字典中的值
+# alien["sex"] = "boy"
+# print(alien)
+
+# 删除字典中的值
+# del alien["sex"]
+# print(alien)
+
+# 遍历字典
+# for key, value in alien.items():
+#     print(key)
+#     print(value)
+
+# 遍历字典中的所有键  并排序
+# print("######################################################")
+# for key in sorted(alien.keys()):
+#     print(key)
+# 遍历字典中的所有值
+# for value in alien.values():
+#     print(value)
+
+# input 函数
+# 函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，以方便你使用。
+# message = input("请输入一个\n数字：")
+# 只会输出你输入的数字
+# print(message)
+# 将字符串转换成数值类型
+# message = int(message)
+# print(message >= 18)
+
+# 遍历删除指定的元素
+# list_test_1 = ["nimei","jiao","baba","nimei"]
+#
+# while "nimei" in list_test_1:
+#     list_test_1.remove("nimei")
+# print(list_test_1)
 
