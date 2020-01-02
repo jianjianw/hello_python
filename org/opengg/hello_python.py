@@ -23,6 +23,10 @@
 # -1代表的是最后一个元素  -2返回倒数第二个元素
 # print(test_list[-1])
 
+# len() 获取列表的长度
+# test_list_1 = ["nimei", "jiao", "baba"]
+# print(len(test_list_1))
+
 # test_list_1 = ["nimei","jiao","baba"]
 # print(test_list_1)
 # 修改列表元素
@@ -298,7 +302,63 @@ alien = {"color": "green", "age": 5, "name": "nimei"}
 # cat_test.sit()
 
 #############################################################################################
+# 读取文件
+# file_path = "D:\\python_workspace\\nimei\\hello.py"
+# with open(file_path) as file_obj:
+#     content = file_obj.read()
+#     print(content)
 
+# 逐行读取文件
+# file_path = "D:\\python_workspace\\nimei\\hello.py"
+# with open(file_path) as file_obj:
+#     for line in file_obj:
+#         print(line.rstrip())
+
+# 使用关键字with时，open()返回的文件对象只在with代码块内可用。
+# 如果要在with代码块外访问文件的内容，可在with代码块内将文件的各行存储在一个列表中，
+# 并在with代码块外使用该列表：你可以立即处理文件的各个部分，也可推迟到程序后面再处理。
+# file_path = "D:\\python_workspace\\nimei\\hello.py"
+# with open(file_path) as file_obj:
+#     #将文件读取到列表中
+#     lines = file_obj.readlines()
+#     # 读取列表中的数据
+# for line in lines:
+#     print(line)
+
+# 写文件
+# Python只能将字符串写入文本文件。要将数值数据存储到文本文件中，必须先使用函数str()将其转换为字符串格式。
+# w 模式打开文件python会在返回文件对象前，将文件清空
+# a 追加模式，不清空文件
+file_path = "D:\\python_workspace\\nimei\\nimei.py"
+with open(file_path, 'a') as file_obj:
+    file_obj.write("\nqq")
+############################################################################################
+
+# 异常
+# file_path = "D:\\python_workspace\\nimei\\haha.py"
+# try:
+#     with open(file_path, 'r') as file_obj:
+#         file_obj.write("\nqq")
+# except:
+#     pass
+#     print("文件找不到")
+# else:
+#     print("try中代码没有异常时，执行else中的代码")
+
+
+# json
+# import json
+#
+# filename = "D:\\python_workspace\\nimei\\json.json"
+# numbers = [2, 3, 5, 6, 7]
+# with open(filename, 'w') as file_obj:
+#     # 将数字列表写入到文件中
+#     json.dump(numbers, file_obj)
+
+# with open(filename, 'r') as file_obj:
+#     # 读取文件中的数据
+#     numbers = json.load(file_obj)
+# print(numbers)
 
 
 
