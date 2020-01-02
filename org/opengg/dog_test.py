@@ -1,4 +1,4 @@
-class dog_test():
+class dog_test(object):
 
     def __init__(self, name, age):
         self.name = name
@@ -10,5 +10,3 @@ class dog_test():
     def roll_over(self):
         print("roll_over")
 
-    # def __init__(self, name, age):
-    #     super().__init__(name, age)

@@ -260,8 +260,7 @@ alien = {"color": "green", "age": 5, "name": "nimei"}
 #
 # get_user(nimei="nimei", haha="haha")
 
-# import 函数调用
-# 导入模块
+# import 函数调用 导入模块
 # import hello
 #
 # username = hello.get_user("nimei")
@@ -286,13 +285,20 @@ alien = {"color": "green", "age": 5, "name": "nimei"}
 # 属性的初始值是在 __init__ 函数里赋值的
 # import Dog
 #
+# 导入类  需要这种方式   from dog_test import dog_test
+# from dog_test import dog_test
+#
+# dog = dog_test("nihao", "nihao")
+# dog.sit()
 
-import dog
+# from cat_test import cat_test
+#
+# cat_test = cat_test("nihao", "nihao")
+#
+# cat_test.sit()
 
-def main():
-    path = sys.path
-    for value in path:
-        print(value)
+#############################################################################################
 
-if __name__ == '__main__':
-    main()
+
+
+
