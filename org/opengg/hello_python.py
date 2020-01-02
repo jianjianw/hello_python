@@ -211,3 +211,88 @@ alien = {"color": "green", "age": 5, "name": "nimei"}
 #     list_test_1.remove("nimei")
 # print(list_test_1)
 
+#########################################################################################
+# 定义函数
+# def get_user():
+#     print("nimie")
+#
+#
+# get_user()
+
+# 参数传递
+# def get_user(username):
+#     print(username)
+#
+#
+# get_user(input())
+#
+# get_user("nimei")
+
+
+# 参数默认值   参数有默认值就可以不传递实参
+# def get_user(username="haha"):
+#     print(username)
+#
+#
+# get_user()
+
+# 参数没有默认值，就必须传递实参
+# def get_user(username):
+#     print(username)
+#
+#
+# get_user()
+
+# 列表当做参数传递，但是不改变实际列表的值
+# function_name(list_name[:])
+
+# 接收任意参数 *username表示：名为username的元祖
+# def get_user(*username):
+#     print(username)
+#
+#
+# get_user("nimei", "haha")
+
+# 接收任意参数 **username表示：名为username的字典
+# def get_user(**username):
+#     print(username)
+#
+#
+# get_user(nimei="nimei", haha="haha")
+
+# import 函数调用
+# 导入模块
+# import hello
+#
+# username = hello.get_user("nimei")
+# print(username)
+
+
+# 导入方法
+# from hello import get_user as u
+# username = u("nimei")
+# print(username)
+
+
+# import sys
+#
+# print(sys.argv[0])
+# # sys.path是python的搜索模块的路径集
+# print(sys.path)
+
+
+#############################################################################################
+# 创建类
+# 属性的初始值是在 __init__ 函数里赋值的
+# import Dog
+#
+
+import dog
+
+def main():
+    path = sys.path
+    for value in path:
+        print(value)
+
+if __name__ == '__main__':
+    main()
